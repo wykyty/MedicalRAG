@@ -1,7 +1,2 @@
-config.yaml
-*.index
-*.jsonl
-*.json
-*.txt
-!requirements.txt
-*.npy
+data/
+output/
