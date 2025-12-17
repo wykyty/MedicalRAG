@@ -4,3 +4,4 @@ config.yaml
 *.json
 *.txt
 !requirements.txt
+*.npy

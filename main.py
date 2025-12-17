@@ -140,7 +140,7 @@ def main(args):
     }
 
     # 3. 初始化 Config 和 Dataset
-    config = Config("config.yaml", config_dict=config_dict)
+    config = Config("my_config.yaml", config_dict=config_dict)
     all_split = get_dataset(config)
     test_data = all_split[args.split]
     
