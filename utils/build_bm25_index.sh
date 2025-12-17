@@ -3,3 +3,5 @@ python -m flashrag.retriever.index_builder \
     --corpus_path /data/wyh/MedicalRAG/data/indexes/corpus.jsonl \
     --bm25_backend bm25s \
     --save_dir /data/wyh/MedicalRAG/data/indexes/huatuo_bm25_index
+
+# 试验之后发现效果很差

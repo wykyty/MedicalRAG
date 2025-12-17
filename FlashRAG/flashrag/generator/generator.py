@@ -210,7 +210,8 @@ class APIGenerator(BaseGenerator):
         api_setting = config["api_setting"] if "api_setting" in config else {}
         self.api_key = api_setting.get("api_key")  
         self.api_url = api_setting.get("api_url")  
-        self.model = api_setting.get("model_name", "gpt-4o-mini")  # Default model
+        self.model = config["generator_model"]  
+        
         self.temperature = api_setting.get("temperature", 0.0)
         self.top_p = api_setting.get("top_p", 1.0)
         self.concurrency = api_setting.get("concurrency", 500)
