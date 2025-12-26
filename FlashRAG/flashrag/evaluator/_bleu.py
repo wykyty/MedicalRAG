@@ -169,6 +169,9 @@ def compute_bleu(reference_corpus, translation_corpus, max_order=4, smooth=False
         reference_length += min(len(r) for r in references)
         translation_length += len(translation)
 
+        # print(f"reference_length: {reference_length}")
+        # print(f"translation_length: {translation_length}")
+
         merged_ref_ngram_counts = collections.Counter()
         for reference in references:
             merged_ref_ngram_counts |= _get_ngrams(reference, max_order)

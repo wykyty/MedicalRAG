@@ -210,13 +210,13 @@ class APIGenerator(BaseGenerator):
         api_setting = config["api_setting"] if "api_setting" in config else {}
         self.api_key = api_setting.get("api_key")  
         self.api_url = api_setting.get("api_url")  
-        self.model = config["generator_model"]  
+        self.model = api_setting.get("generator_model")
         
         self.temperature = api_setting.get("temperature", 0.0)
         self.top_p = api_setting.get("top_p", 1.0)
         self.concurrency = api_setting.get("concurrency", 500)
         self.max_retries = api_setting.get("max_retries", 3)
-        self.system_prompt = ("You are a helpful assistant.")  # Default system prompt
+        self.system_prompt = ("")  
 
     async def _call_api_batch(self, prompts: List[str]):
         """Call the custom API in batches using asynchronous requests."""

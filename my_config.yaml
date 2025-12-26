@@ -3,13 +3,16 @@
 model2path:
   e5: "intfloat/e5-base-v2"
   # bge: "BAAI/bge-base-en-v1.5"
-  bge: "BAAI/bge-large-zh-v1.5"
+  bge: "BAAI/bge-large-zh-v1.5"  # 使用中文编码
   contriever: "facebook/contriever"
   llama2-7B-chat: "meta-llama/Llama-2-7b-chat-hf"
   llama2-7B: "meta-llama/Llama-2-7b-hf"
   llama2-13B: "meta-llama/Llama-2-13b-hf"
   llama2-13B-chat: "meta-llama/Llama-2-13b-chat-hf"
   llama3-8B-instruct: "/data/wyh/model/Meta-Llama-3-8B-Instruct"
+  qwen2.5-7B-instruct: "Qwen/Qwen2.5-7B-Instruct"
+  qwen3-8B: "/data/wyh/model/Qwen3-8B/"
+  deepseek-7B-chat: "/data/wyh/model/deepseek-llm-7b-chat/"
 
 # Pooling methods for each embedding model
 model2pooling:

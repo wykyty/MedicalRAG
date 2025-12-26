@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "/data/wyh/MedicalRAG/FlashRAG"   //确保Pylance分析正确
+    ]
+}

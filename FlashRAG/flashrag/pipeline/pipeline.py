@@ -47,7 +47,6 @@ class SequentialPipeline(BasicPipeline):
         inference stage:
             query -> pre-retrieval -> retriever -> post-retrieval -> generator
         """
-
         super().__init__(config, prompt_template)
         
         print("get_generator")
